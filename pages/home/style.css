@@ -3,172 +3,172 @@ section {
     padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-color: #f0f9ff;  /* pastel blue */
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.3;
+    color: #333;  /* dark grey text */
 }
 
-span{
-    color: rgba(49, 255, 70, 0.595);
+span {
+    color: #a3c6f1;  /* pastel blue */
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 3em;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #333;  /* dark grey text */
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.4em;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #333;  /* dark grey text */
 }
 
-.home-img{
+.home-img {
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
     width: 100%;
     border-radius: 11%;
-    box-shadow: 0 0 25px solid rgba(49, 255, 70, 0.595);
+    box-shadow: 0 0 25px solid #a3c6f1;  /* pastel blue box shadow */
     cursor: pointer;
     transition: 0.2s linear;
-    
 }
 
-.home-img img:hover{
+.home-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.social-icons a{
-    display:inline-flex;
+.social-icons a {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid rgb(31, 218, 50);
+    border: 0.2rem solid #a3c6f1;  /* pastel blue border */
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: rgba(8, 241, 78, 0.523);
+    color: #a3c6f1;  /* pastel blue */
 }
 
-.social-icons a:hover{
-    color: black;
-    transform: scale(1.3)translateY(-5px);
-    background-color: rgba(49, 255, 70, 0.595);
-    box-shadow: 0 0 25px rgba(49, 255, 70, 0.595);
-
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #a3c6f1;  /* pastel blue */
+    box-shadow: 0 0 25px #a3c6f1;  /* pastel blue box shadow */
 }
 
-.bin{
+.bin {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: white;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: rgba(49, 255, 70, 0.595);
+    color: #a3c6f1;  /* pastel blue */
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid rgba(49, 255, 70, 0.595);
+    border: 2px solid #a3c6f1;  /* pastel blue border */
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.bin:hover{
+.bin:hover {
     color: black;
-    transform: scale(1.03)translateY(-5px);
-    background-color: rgba(0, 255, 26, 0.595);
-    box-shadow: 0 0 25px rgba(0, 255, 26, 0.799);
+    transform: scale(1.03) translateY(-5px);
+    background-color: #a3c6f1; /* light green */
+    box-shadow: 0 0 25px #a3c6f1; /* greenish glow */
 }
 
-.typing-text{
+.typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.typing-texxt span{
+.typing-texxt span {
     position: relative;
 }
 
-.typing-text span::before{
+.typing-text span::before {
     content: "software Developer";
-    color: rgba(49, 255, 70, 0.595);
+    color: #a3c6f1;  /* pastel blue */
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
+.typing-text span::after {
     content: "";
     background-color: transparent;
-    position:absolute;
+    position: absolute;
     width: calc(100% + 8px);
     height: 5%;
     border-left: 3px solid black;
     right: -8;
     animation: cursor 0.6s infinite;
-
 }
 
-@keyframes cursor{
-    to{
-        border-left: 3px solid rgba(49, 255, 70, 0.595);
+@keyframes cursor {
+    to {
+        border-left: 3px solid #a3c6f1;  /* pastel blue cursor */
     }
 }
 
-@keyframes words{
-    0%, 20%{
+@keyframes words {
+    0%, 20% {
         content: "Web Developer";
     }
-    21%, 40%{
+    21%, 40% {
         content: "Software Developer";
     }
-    41%, 60%{
+    41%, 60% {
         content: "Web Designer";
     }
-    61%, 80%{
+    61%, 80% {
         content: "Graphics Designer";
     }
-    81%, 100%{
+    81%, 100% {
         content: "Script Writer";
     }
 }
 
-@media(max-width: 1000px){
-    .home{
+@media(max-width: 1000px) {
+    .home {
         gap: 4rem;
     }
 }
 
-@media(max-width:995px){
-    .home{
+@media(max-width: 995px) {
+    .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
 }
 
-.home .home-content h3{
+.home .home-content h3 {
     font-size: 2.5rem;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 5rem;
 }
 
-.home-img img{
+.home-img img {
     margin-top: 4rem;
 }
