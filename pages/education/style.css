@@ -1,0 +1,102 @@
+.education-section {
+    padding: 5rem 9%;
+    background-color: #f0f9ff;  /* pastel blue background */
+    margin-top: 5rem; /* adds spacing between previous section and education */
+}
+
+.education-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.education-item {
+    background-color: #fff;  /* white background for each item */
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-10px);  /* subtle hover effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.school-name {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.degree {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.grad-year {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.highlights li {
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 1.5;
+    margin-left: 1.5rem;
+}
+
+.highlights li::before {
+    content: "•"; /* bullet point */
+    color: #a3c6f1; /* pastel blue */
+    margin-right: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media(max-width: 768px) {
+    .education-heading {
+        font-size: 2.5rem;
+    }
+
+    .education-list {
+        gap: 2rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .school-name {
+        font-size: 2rem;
+    }
+
+    .degree, .grad-year {
+        font-size: 1.6rem;
+    }
+
+    .highlights li {
+        font-size: 1.5rem;
+    }
+}

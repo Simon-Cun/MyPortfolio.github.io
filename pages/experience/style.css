@@ -1,0 +1,114 @@
+.experience-section {
+    padding: 5rem 9%;
+    background-color: #f0f9ff;  /* pastel blue background */
+    margin-top: 5rem; /* adds spacing between previous sections */
+}
+
+.experience-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.experience-item {
+    display: flex;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-10px);  /* subtle hover effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.experience-image {
+    flex-shrink: 0;
+    width: 10rem; /* Adjust the size as needed */
+    height: 10rem; /* Adjust the size as needed */
+    margin-right: 2rem;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Keeps aspect ratio intact */
+    border-radius: 1rem;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.job-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.company-name {
+    font-size: 2rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.job-description {
+    font-size: 1.8rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for smaller screens */
+@media(max-width: 768px) {
+    .experience-heading {
+        font-size: 2.5rem;
+    }
+
+    .experience-list {
+        gap: 2rem;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .experience-image {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .experience-details {
+        text-align: center;
+    }
+
+    .job-title {
+        font-size: 2rem;
+    }
+
+    .company-name {
+        font-size: 1.6rem;
+    }
+
+    .job-description {
+        font-size: 1.6rem;
+    }
+}
